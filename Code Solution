@@ -1,0 +1,22 @@
+#Input Format 
+#string of your name, an integer of the number of available agents, and a string of the other four names separated by spaces.
+
+#Output Format 
+#integer of the number of minutes that it will take to get your license.
+
+my_name = input()
+agents = int(input())
+people = input()
+
+list = people.split()
+list.append(my_name)
+list.sort()
+
+from math import *
+
+for i in range(len(list)):
+    if list[i] == my_name:
+        time = floor(i / (agents))
+        time = (before * 20) + 20
+        
+print(int(time))
